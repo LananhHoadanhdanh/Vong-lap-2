@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n = prompt("Nhập số nguyên dương n: ")
+    if (n < 1) {
+        alert('Lỗi!')
+    }
+    else {
+        let n_giaithua = 1;
+        for (let i = 1 ; i <= n; i++) {
+            n_giaithua = n_giaithua * i;
+        }
+        document.write(n + '! = ' + n_giaithua)
+    }
+</script>

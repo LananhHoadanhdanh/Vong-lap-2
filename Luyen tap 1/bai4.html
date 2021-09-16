@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+  let a = 0;
+  let b = 1;
+  //let count = +prompt("Nhập vào số lượng số cần hiển thị: ")
+  document.write("Số đầu tiên chia hết cho 5 là: ")
+  for (let i = 1; ; i++) {
+    //document.write(b + ", ")
+    let c = a + b
+    a = b
+    if (b % 5 == 0) {
+      document.write(b)
+      break
+    }
+    b = c
+  }
+</script>

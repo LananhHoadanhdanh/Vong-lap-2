@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let r = +prompt("Nhập lãi suất tháng: ")
+    let month = +prompt('Nhập số tháng vay: ')
+    let money = +prompt('Nhập số tiền gốc')
+    for (i=1; i <= month; i++) {
+        let lai = money * (r / 100)
+        money = money + lai
+    }
+    document.write('Tiền cả gốc lẫn lãi tính theo lãi kép là ' + money + " đồng.")
+</script>

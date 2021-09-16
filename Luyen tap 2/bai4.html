@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let m = prompt('Nhập chiều ngang: ');
+    let n = prompt('Nhập chiều dọc: ');
+        if  (m <= 0 || n <= 0) {
+            alert('Nhập lại đi!')
+        }
+        else {
+            for (i=1; i<=n; i++) {
+                for (k=1; k<=m; k++) {
+                    if (i==1 || k==1 || i==n ||k==m) {
+                        document.write('*')
+                    }
+                    else {
+                        document.write("&nbsp&nbsp")
+                    }
+                }
+                document.write('<br>')
+            }
+        }
+</script>

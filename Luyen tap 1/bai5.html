@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let a = 0;
+    let b = 1;
+    let count = +prompt("Nhập vào số cần tính: ")
+    //document.write("Tổng những số cần tìm là: ")
+    let sum = 0;
+    for (let i = 1; i <= count; i++) {
+        // document.write(b + ", ")
+        let c = a + b
+        a = b
+        sum = sum + b
+        b = c
+    }
+    document.write(sum)
+</script>
