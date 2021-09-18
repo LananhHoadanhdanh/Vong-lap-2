@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input type="text" id="input_a" placeholder="Nhập a">-->
+<!--<input type="text" id="input_b" placeholder="Nhập b">-->
+<button onclick="doanSo()">Play</button>
+</body>
+</html>
+<script>
+
+    // let a = +document.getElementById("input_a").value;
+    // let b = +document.getElementById("input_b").value;
+
+    let a = +prompt("Nhập số a");
+    let b = +prompt("Nhập số b");
+
+    let random = Math.random();
+    if (a<b) {
+        so_dung = parseInt(random * (b-a) + a);
+    } else {
+        so_dung = parseInt(random * (a-b) + b);
+    }
+    function doanSo() {
+        let number = prompt('Nhập số bạn nghĩ:');
+        for (let i=1; i<3; i++) {
+            if (number == so_dung) {
+                alert('Chúc mừng bạn!');
+                break;
+            } else if (number > so_dung) {
+                alert('Số bạn vừa chọn quá lớn!');
+            } else {
+                alert('Số bạn vừa chọn quá nhỏ!');
+            }
+            number = prompt('Nhập số bạn nghĩ:')
+        }
+        if (number != so_dung) {
+            alert('Bạn thua mất rồi. Số chính xác là ' + so_dung + '.')
+        }
+    }
+</script>
