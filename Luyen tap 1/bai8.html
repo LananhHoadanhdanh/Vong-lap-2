@@ -5,26 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<!--<input type="text" id="input_a" placeholder="Nhập a">-->
-<!--<input type="text" id="input_b" placeholder="Nhập b">-->
+<input type="text" id="input_a" placeholder="Nhập a">
+<input type="text" id="input_b" placeholder="Nhập b">
 <button onclick="doanSo()">Play</button>
 </body>
 </html>
 <script>
-
-    // let a = +document.getElementById("input_a").value;
-    // let b = +document.getElementById("input_b").value;
-
-    let a = +prompt("Nhập số a");
-    let b = +prompt("Nhập số b");
-
-    let random = Math.random();
-    if (a<b) {
-        so_dung = parseInt(random * (b-a) + a);
-    } else {
-        so_dung = parseInt(random * (a-b) + b);
-    }
     function doanSo() {
+        let a = +document.getElementById("input_a").value;
+        let b = +document.getElementById("input_b").value;
+        let random = Math.random();
+        if (a<b) {
+            so_dung = parseInt(random * (b-a) + a);
+        } else {
+            so_dung = parseInt(random * (a-b) + b);
+        }
         let number = prompt('Nhập số bạn nghĩ:');
         for (let i=1; i<3; i++) {
             if (number == so_dung) {
