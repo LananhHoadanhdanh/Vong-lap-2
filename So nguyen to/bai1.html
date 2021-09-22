@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="number" placeholder="Nhập đi"/>
+<label><input type="text" id="number" placeholder="Nhập đi"/></label>
 <input type="button" value="In kết quả" onclick="print_number()"/>
 <p id="result"></p>
 </body>
@@ -30,16 +30,16 @@
     function print_number() {
         let number = document.getElementById("number").value;
         number = parseInt(number);
-        let html = '';
+        let so_nguyen_to = '';
         let count = 1;
         let i = 2;
         while (count <= number) {
             if (kiem_tra_snt(i)) {
-                html += i + ' <br/>';
+                so_nguyen_to += i + ' <br/>';
                 count++
             }
             i++
         }
-        document.getElementById("result").innerHTML = html;
+        document.getElementById("result").innerHTML = so_nguyen_to;
     }
 </script>
